@@ -16,7 +16,7 @@ class  Negociacao {
     }
     get data(){
 
-//      PROGRAMAÇÃO DEFENSIVA
+//      PROGRAMAÇÃO DEFENSIVA CASO TENTEM REDEFINIR A DATA DA NEGOCIAÇÃO, SERÁ CRIADA OUTRA DATA.
         return new Date(this._data.getTime());
     }
     get quantidade(){
